@@ -5,90 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keindahan Gunung Indonesia</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Mengambil Font dari Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Hero Section -->
-    <header class="hero">
+    <header class="hero-section">
         <nav class="navbar">
-            <div class="logo">
-                <img src="image/logo,gunung.webp" alt="Logo">
-                <span>Keindahan Gunung</span>
+            <div class="logo-container">
+                <img src="logo.gunung.webp" alt="Logo Keindahan Gunung" class="logo-img">
+                <span class="logo-title">Keindahan Gunung</span>
             </div>
-            <ul class="nav-links">
-                <li><a href="#">Beranda</a></li>
-                <li><a href="#">Gunung</a></li>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-item">Beranda</a></li>
+                <li><a href="detail-bromo.html" class="nav-item">Gunung</a></li>
             </ul>
         </nav>
 
         <div class="hero-content">
-            <h1>Menjelajah Keindahan <br> Gunung Indonesia</h1>
-            <p>Menjaga kelestarian alam, melihat keindahan bersama kami</p>
+            <h1 class="hero-title">Menjelajah Keindahan <br>Gunung Indonesia</h1>
+            <p class="hero-subtitle">Menjaga kelestarian alam, melihat keindahan bersama kami</p>
         </div>
 
-        <!-- Mountain Cards -->
-        <div class="card-container">
-            <!-- Card 1: Bromo -->
+        <div class="cards-grid">
+            
             <div class="mountain-card">
-                <img src="image/bromo.jpg" alt="Gunung Bromo">
-                <div class="card-info">
-                    <h3>Gunung Bromo</h3>
-                    <span>2.329 mdpl</span>
-                    <button class="btn-lihat">LIHAT</button>
+                <img src="bromo.jpg" alt="Gunung Bromo" class="card-bg">
+                <div class="card-overlay">
+                    <div class="card-header">
+                        <h3 class="mountain-name">Gunung Bromo</h3>
+                        <span class="mountain-elevation">2.329 mdpl</span>
+                    </div>
+                    <a href="detail-bromo.html" class="btn-lihat" style="text-decoration: none; text-align: center;">LIHAT</a>
                 </div>
             </div>
 
-            <!-- Card 2: Sindoro -->
             <div class="mountain-card">
-                <img src="https://placehold.co/383x219" alt="Gunung Sindoro">
-                <div class="card-info">
-                    <h3>Gunung Sindoro</h3>
-                    <span>3.153 mdpl</span>
-                    <button class="btn-lihat">LIHAT</button>
+                <img src="sindoro.jpg" alt="Gunung Sindoro" class="card-bg">
+                <div class="card-overlay">
+                    <div class="card-header">
+                        <h3 class="mountain-name">Gunung Sindoro</h3>
+                        <span class="mountain-elevation">3.153 mdpl</span>
+                    </div>
+                    <a href="detail-sindoro.html" class="btn-lihat" style="text-decoration: none; text-align: center;">LIHAT</a>
                 </div>
             </div>
 
-            <!-- Card 3: Gede -->
             <div class="mountain-card">
-                <img src="https://placehold.co/383x219" alt="Gunung Gede">
-                <div class="card-info">
-                    <h3>Gunung Gede</h3>
-                    <span>2.958 mdpl</span>
-                    <button class="btn-lihat">LIHAT</button>
+                <img src="gunung_gede.jpg" alt="Gunung Gede" class="card-bg">
+                <div class="card-overlay">
+                    <div class="card-header">
+                        <h3 class="mountain-name">Gunung Gede</h3>
+                        <span class="mountain-elevation">2.958 mdpl</span>
+                    </div>
+                    <a href="detail-gede.html" class="btn-lihat" style="text-decoration: none; text-align: center;">LIHAT</a>
                 </div>
             </div>
+
         </div>
     </header>
 
-    <!-- Footer / Features Section -->
     <footer class="info-bar">
-        <div class="feature">
-            <img src="https://placehold.co/114x64" alt="Lestarikan Alam">
-            <div class="feature-text">
-                <strong>Lestarikan alam</strong>
-                <p>Jaga kelestarian alam di lingkungan kita</p>
+        <div class="info-item">
+            <img src="daun.png" alt="Icon Lestarikan Alam" class="info-icon">
+            <div class="info-text">
+                <h4 class="info-title">Lestarikan alam</h4>
+                <p class="info-desc">Jaga kelestarian alam di lingkungan kita</p>
             </div>
         </div>
 
-        <div class="divider"></div>
+        <div class="vertical-divider"></div>
 
-        <div class="feature">
-            <img src="https://placehold.co/96x71" alt="Pendaki Aman">
-            <div class="feature-text">
-                <strong>Pendaki aman</strong>
-                <p>Pendaki dijamin dengan keselamatan saat mendaki</p>
+        <div class="info-item">
+            <img src="gunng logo2.png" alt="Icon Pendaki Aman" class="info-icon">
+            <div class="info-text">
+                <h4 class="info-title">Pendaki aman</h4>
+                <p class="info-desc">Pendaki dijamin dengan keselamatan saat mendaki</p>
             </div>
         </div>
 
-        <div class="divider"></div>
+        <div class="vertical-divider"></div>
 
-        <div class="feature">
-            <img src="https://placehold.co/67x67" alt="Keindahan Alam">
-            <div class="feature-text">
-                <strong>Keindahan alam</strong>
-                <p>Dapatkan keindahan alam yang membuat rindu</p>
+        <div class="info-item">
+            <img src="kamera.jpg" alt="Icon Keindahan Alam" class="info-icon">
+            <div class="info-text">
+                <h4 class="info-title">Keindahan alam</h4>
+                <p class="info-desc">Dapatkan keindahan alam yang dapat membuat kita rindu</p>
             </div>
         </div>
     </footer>
