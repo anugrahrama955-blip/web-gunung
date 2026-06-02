@@ -1,0 +1,353 @@
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+/* Main Container (Mengunci dimensi asli canvas anda) */
+.main-container {
+  width: 1448px;
+  height: 1076px;
+  background: white;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* HEADER SECTION */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1448px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  background: white;
+  z-index: 10;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.logo-img {
+  width: 136px;
+  height: 136px;
+  margin-top: -10px;
+}
+
+.logo-title {
+  color: black;
+  font-size: 32px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.navbar {
+  display: flex;
+  gap: 65px;
+  margin-right: 150px;
+}
+
+.nav-link {
+  color: black;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* HERO SECTION */
+.hero-section {
+  position: absolute;
+  top: 103px;
+  left: 0;
+  width: 1454px;
+  height: 353px;
+}
+
+.hero-bg {
+  width: 1454px;
+  height: 353px;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 31px;
+  left: 45px;
+  color: white;
+}
+
+.hero-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.hero-location {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin-top: 5px;
+}
+
+.hero-elevation-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.icon-small {
+  width: 41px;
+  height: 28px;
+}
+
+.hero-description {
+  width: 487px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 15px;
+}
+
+/* QUICK INFO BAR */
+.info-bar {
+  position: absolute;
+  top: 439px;
+  left: 53px;
+  width: 1346px;
+  height: 80px;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.32);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 40px;
+  gap: 120px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.info-icon {
+  width: 41px;
+  height: 28px;
+}
+
+.info-icon-large {
+  width: 51px;
+  height: 51px;
+}
+
+.info-bar .info-item:nth-child(3) img {
+  width: 67px;
+  height: 67px;
+}
+
+.info-label {
+  color: black;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.info-value {
+  color: black;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+/* ROUTES SECTION */
+.routes-container {
+  position: absolute;
+  top: 555px;
+  left: 0;
+  width: 1448px;
+  display: flex;
+  justify-content: center;
+  gap: 193px;
+}
+
+.route-card {
+  width: 420px;
+  height: 232px;
+  border-radius: 5px;
+  border: 1px solid #919191;
+  padding: 15px 20px;
+  background: transparent;
+  font-family: 'Roboto', sans-serif;
+}
+
+.route-header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.route-icon {
+  width: 51px;
+  height: 51px;
+}
+
+.route-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.route-desc {
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: -5px;
+  margin-left: 56px;
+}
+
+.route-details {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+}
+
+.detail-icon {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.detail-label {
+  width: 150px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.detail-value {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.badge {
+  width: 77px;
+  height: 24px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.badge-sedang { background: #3B6E46; font-size: 13px; }
+.badge-menengah { background: #3B6E46; }
+
+.align-start {
+  align-items: flex-start;
+  margin-top: 5px;
+}
+
+.note-label {
+  margin-left: 35px;
+  width: 125px;
+}
+
+.note-value {
+  width: 200px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
+
+/* FACILITIES SECTION */
+.facilities-section {
+  position: absolute;
+  top: 836px;
+  left: 67px;
+  width: 1314px;
+}
+
+.section-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  margin-bottom: 35px;
+  margin-left: 26px;
+}
+
+.facilities-grid {
+  display: flex;
+  gap: 45px;
+}
+
+.facility-card {
+  width: 294.31px;
+  height: 126.85px;
+  border-radius: 10px;
+  border: 1px solid #8B8B8B;
+  padding: 10px 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.facility-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.facility-title {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.facility-subtitle {
+  font-size: 14px;
+  font-weight: 300;
+  margin-left: 50px;
+  margin-top: 2px;
+  letter-spacing: 0.5px;
+}
+
+.facility-desc {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  margin-top: 5px;
+}
+
+.spacer-top {
+  margin-top: 15px;
+}

@@ -1,0 +1,365 @@
+/* ==========================================
+   1. RESET & GLOBAL STYLES
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+/* ==========================================
+   2. NAVBAR TOP SYSTEM
+   ========================================== */
+.navbar {
+    width: 100%;
+    height: 103px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: -16px;
+}
+
+.logo-area img {
+    width: 136px;
+    height: 136px;
+    object-fit: contain;
+}
+
+.logo-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.nav-links {
+    display: flex;
+    gap: 65px;
+    list-style: none;
+    padding-right: 150px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-links a.active {
+    border-bottom: 2px solid #000000;
+    padding-bottom: 4px;
+}
+
+/* ==========================================
+   3. HERO BANNER BACKGROUND SYSTEM
+   ========================================== */
+.hero-banner {
+    width: 100%;
+    min-height: 353px;
+    
+    /* GANTI 'banner-bromo.jpg' DI BAWAH INI DENGAN FOTO BANNER BROMO KAMU */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image/gunungbromo-2.jpg');
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding: 40px 60px;
+}
+
+.hero-container {
+    max-width: 1000px;
+}
+
+.mountain-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.location-tag {
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.elevation-tag {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.icon-inline {
+    width: 41px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.mountain-desc {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+    max-width: 550px;
+}
+
+/* ==========================================
+   4. CONTENT LAYOUT WRAPPER
+   ========================================== */
+.content-wrapper {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 30px 20px 80px 20px;
+}
+
+/* ==========================================
+   5. QUICK INFORMATION BAR
+   ========================================== */
+.quick-info-bar {
+    width: 100%;
+    min-height: 80px;
+    border: 1px solid rgba(0, 0, 0, 0.32);
+    border-radius: 5px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 45px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.info-item img {
+    width: 41px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.info-item img.large-icon {
+    width: 67px;
+    height: 67px;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.info-value {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+}
+
+/* ==========================================
+   6. ROUTES SECTION STYLE
+   ========================================== */
+.routes-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: 55px;
+}
+
+.route-card {
+    flex: 1;
+    border: 1px solid #919191;
+    border-radius: 5px;
+    padding: 25px;
+    background: #ffffff;
+}
+
+.route-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.route-main-icon {
+    width: 51px;
+    height: 51px;
+    object-fit: contain;
+}
+
+.route-title h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.route-title p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #444444;
+}
+
+.route-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.detail-row {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.detail-row img {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    object-fit: contain;
+}
+
+.detail-row strong, .label-heading {
+    width: 150px;
+    font-weight: 600;
+}
+
+.detail-row .value {
+    font-weight: 300;
+}
+
+.detail-row .small-text {
+    font-size: 12px;
+}
+
+/* Difficulty Badge Status */
+.badge {
+    padding: 2px 14px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.badge-easy {
+    background-color: #3B6E46;
+}
+
+.badge-medium {
+    background-color: #e67e22; /* Warna jingga penyesuaian visual menengah */
+}
+
+/* ==========================================
+   7. AMENITIES / FACILITIES GRID SYSTEM
+   ========================================== */
+.section-title {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+}
+
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.facility-box {
+    border: 1px solid #8B8B8B;
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 126px;
+    background: #ffffff;
+}
+
+.facility-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.facility-header img {
+    object-fit: contain;
+}
+
+.facility-header h4 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.facility-bold-sub {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+}
+
+.facility-desc {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+}
+
+.spacer-top {
+    margin-top: 5px;
+}
+
+/* ==========================================
+   8. RESPONSIVE DESIGN FOR SMARTPHONES
+   ========================================== */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 0 20px;
+    }
+    .nav-links {
+        padding-right: 0;
+        gap: 30px;
+    }
+    .hero-banner {
+        padding: 40px 20px;
+    }
+    .quick-info-bar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    .routes-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+}

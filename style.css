@@ -1,0 +1,196 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                url('image/background.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    padding: 20px 60px;
+    position: relative;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #4ade80;
+}
+
+/* Content */
+.hero-content {
+    margin-top: 80px;
+}
+
+.hero-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    max-width: 600px;
+    opacity: 0.9;
+}
+
+/* Card Container & Effects */
+.card-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+.mountain-card {
+    position: relative;
+    width: 380px;
+    height: 220px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+/* EFEK TIMBUL SAAT HOVER */
+.mountain-card:hover {
+    transform: translateY(-15px) scale(1.05); /* Melayang ke atas dan membesar sedikit */
+    box-shadow: 0px 15px 35px rgba(255, 255, 255, 0.3);
+    border-color: #fff;
+}
+
+.mountain-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+    transition: 0.4s;
+}
+
+.mountain-card:hover img {
+    filter: brightness(0.9);
+}
+
+.card-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-info h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-info span {
+    font-size: 13px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2px 8px;
+    border-radius: 5px;
+    align-self: flex-start;
+}
+
+/* Tombol Lihat */
+.btn-lihat {
+    align-self: flex-end;
+    background: white;
+    color: #1D6117;
+    border: none;
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-lihat:hover {
+    background: #4ade80;
+    color: white;
+    transform: scale(1.1); /* Tombol membesar sedikit saat disentuh */
+}
+
+/* Footer Section */
+.info-bar {
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 60px;
+    margin-top: -20px; /* Overlap sedikit dengan hero */
+    position: relative;
+    z-index: 10;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.feature-text strong {
+    display: block;
+    font-size: 16px;
+}
+
+.feature-text p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #555;
+}
+
+.divider {
+    width: 1px;
+    height: 60px;
+    background: #ddd;
+}

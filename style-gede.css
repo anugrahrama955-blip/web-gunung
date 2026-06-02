@@ -1,0 +1,317 @@
+/* ==========================================================================
+   RESET & BASE STYLES
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 1448px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* ==========================================================================
+   HEADER / NAVBAR
+   ========================================================================== */
+.navbar {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.logo-img {
+  width: 136px;
+  height: 136px;
+  margin-top: -15px;
+}
+
+.site-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 60px;
+}
+
+.nav-item {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.hero-section {
+  position: relative;
+  width: 1454px;
+  height: 353px;
+  overflow: hidden;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px 45px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.25); /* Lapisan gelap tipis agar teks terbaca */
+}
+
+.mountain-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.mountain-location {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-top: 5px;
+}
+
+.mountain-elevation-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-top: 10px;
+}
+
+.icon-small {
+  width: 41px;
+  height: 28px;
+}
+
+.mountain-desc {
+  width: 488px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-top: 15px;
+}
+
+/* ==========================================================================
+   INFO BAR
+   ========================================================================== */
+.info-bar {
+  width: 1346px;
+  height: 80px;
+  margin: 30px auto;
+  border: 1px solid rgba(0, 0, 0, 0.32);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.info-icon { width: 41px; height: 28px; }
+.info-icon-medium { width: 51px; height: 51px; }
+.info-icon-large { width: 67px; height: 67px; }
+
+.info-label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.info-value {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+}
+
+/* ==========================================================================
+   LAYOUT GRID SECTIONS
+   ========================================================================== */
+.section-container {
+  width: 1346px;
+  margin: 40px auto;
+}
+
+.section-heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* Jalur Grid */
+.cards-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Fasilitas Grid */
+.facilities-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+/* ==========================================================================
+   CARDS COMPONENT (JALUR PENDAKIAN)
+   ========================================================================== */
+.trail-card {
+  width: 420px;
+  height: 245px;
+  border: 1px solid #919191;
+  border-radius: 5px;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.card-icon {
+  width: 51px;
+  height: 51px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card-desc {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 15px;
+  height: 48px; /* Menjaga konsistensi tinggi deskripsi */
+}
+
+.card-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.card-detail.alignment-top {
+  align-items: flex-start;
+}
+
+.detail-label {
+  font-size: 15px;
+  font-weight: 600;
+  width: 150px;
+}
+
+.detail-value {
+  font-size: 15px;
+  font-weight: 300;
+  text-align: right;
+  flex: 1;
+}
+
+.font-bold { font-weight: 600; }
+.text-small { font-size: 12px; line-height: 16px; }
+
+/* Badges */
+.badge {
+  border-radius: 10px;
+  padding: 2px 12px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.badge-green {
+  background-color: #3B6E46;
+}
+
+/* ==========================================================================
+   FACILITIES COMPONENT
+   ========================================================================== */
+.facility-card {
+  width: 294px;
+  height: 140px;
+  border: 1px solid #8B8B8B;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.facility-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.facility-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.facility-subtext {
+  font-size: 14px;
+  font-weight: 300;
+  margin-left: 45px; /* Menyelaraskan teks di bawah judul */
+  color: #555;
+}
+
+.facility-desc {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  margin-top: 8px;
+}
+
+.margin-top-sm {
+  margin-top: 12px;
+}
