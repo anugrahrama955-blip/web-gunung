@@ -1,4 +1,4 @@
-/* Reset & Base Styles */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,7 +13,6 @@ body {
   padding: 20px 0;
 }
 
-/* Main Container (Mengunci dimensi asli canvas anda) */
 .main-container {
   width: 1448px;
   height: 1076px;
@@ -23,7 +22,6 @@ body {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* HEADER SECTION */
 .header {
   position: absolute;
   top: 0;
@@ -72,7 +70,6 @@ body {
   text-decoration: none;
 }
 
-/* HERO SECTION */
 .hero-section {
   position: absolute;
   top: 103px;
@@ -132,7 +129,6 @@ body {
   margin-top: 15px;
 }
 
-/* QUICK INFO BAR */
 .info-bar {
   position: absolute;
   top: 439px;
@@ -184,7 +180,6 @@ body {
   font-weight: 400;
 }
 
-/* ROUTES SECTION */
 .routes-container {
   position: absolute;
   top: 555px;
@@ -289,7 +284,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* FACILITIES SECTION */
 .facilities-section {
   position: absolute;
   top: 836px;
