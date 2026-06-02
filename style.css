@@ -1,6 +1,4 @@
-/* ==========================================
-   RESET & DASAR 
-   ========================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,9 +12,6 @@ body {
     overflow-x: hidden;
 }
 
-/* ==========================================
-   HERO SECTION (Bagian Atas)
-   ========================================== */
 .hero-section {
     position: relative;
     width: 100%;
@@ -26,7 +21,6 @@ body {
                 url('background.jpg') no-repeat center center/cover;
 }
 
-/* Navigasi */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -71,10 +65,8 @@ body {
 .nav-item:hover, 
 .nav-item.active {
     opacity: 1;
-    color: #4ade80; /* Warna hijau natural saat aktif/hover */
-}
+    color: #4ade80; 
 
-/* Judul Utama */
 .hero-content {
     margin-bottom: 60px;
 }
@@ -94,9 +86,7 @@ body {
     max-width: 800px;
 }
 
-/* ==========================================
-   KARTU GUNUNG (Grid & Efek Timbul)
-   ========================================== */
+
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(3, 1380px);
@@ -117,16 +107,14 @@ body {
     box-shadow: 0px 0px 24px rgba(255, 255, 255, 0.15);
     cursor: pointer;
     
-    /* Efek transisi halus untuk animasi timbul */
     transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
                 box-shadow 0.4s ease, 
                 border-color 0.4s ease;
 }
 
-/* EFEK TIMBUL SAAT KARTU DI-HOVER/DIPENCET */
 .mountain-card:hover {
-    transform: translateY(-15px) scale(1.03); /* Kartu naik ke atas dan sedikit membesar */
-    box-shadow: 0px 20px 40px rgba(255, 255, 255, 0.3); /* Bayangan menjadi lebih tegas */
+    transform: translateY(-15px) scale(1.03); 
+    box-shadow: 0px 20px 40px rgba(255, 255, 255, 0.3); 
     border-color: #ffffff;
 }
 
@@ -139,8 +127,7 @@ body {
 }
 
 .mountain-card:hover .card-bg {
-    filter: brightness(0.9); /* Gambar latar menjadi sedikit lebih terang saat disorot */
-}
+    filter: brightness(0.9); 
 
 .card-overlay {
     position: absolute;
@@ -168,7 +155,6 @@ body {
     opacity: 0.9;
 }
 
-/* Tombol Lihat */
 .btn-lihat {
     align-self: flex-end;
     background-color: #ffffff;
@@ -182,20 +168,16 @@ body {
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     
-    /* Transisi tombol */
     transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
-/* EFEK TIMBUL PADA TOMBOL LIHAT */
 .btn-lihat:hover {
-    background-color: #1D6117;
+    background-color: #1D6117
     color: #ffffff;
-    transform: scale(1.1); /* Tombol membesar ketika kursor di atasnya */
+    transform: scale(1.1);
 }
 
-/* ==========================================
-   BAR INFORMASI (Bagian Bawah/Footer)
-   ========================================== */
+
 .info-bar {
     width: 100%;
     background-color: #ffffff;
@@ -215,7 +197,7 @@ body {
     width: 380px; 
 }
 
-/* --- INI PERBAIKAN UNTUK GAMBAR DI BAWAH KANAN --- */
+
 .info-icon {
     width: 90px;        
     height: 65px;       
